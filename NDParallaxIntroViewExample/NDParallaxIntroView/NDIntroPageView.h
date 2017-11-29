@@ -10,7 +10,7 @@
 
 @interface NDIntroPageView : UIView
 
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIView *imageView;
 @property (strong, nonatomic) IBOutlet UILabel *titlelabel;
 @property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHorizontalConstraint;

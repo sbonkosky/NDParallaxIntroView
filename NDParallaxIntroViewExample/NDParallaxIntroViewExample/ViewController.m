@@ -39,24 +39,24 @@
 #pragma mark - NDIntroView methods
 
 -(void)startIntro {
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"parallax"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    imageView.backgroundColor = UIColor.redColor;
+    
     NSArray *pageContentArray = @[@{kNDIntroPageTitle : @"NDParallaxIntroView",
                                     kNDIntroPageDescription : @"Now you can easily add your beautiful intro into your app with no hassle.",
-                                    kNDIntroPageImageName : @"parallax"
+                                    kNDIntroPageImageName : imageView
                                     },
                                   @{kNDIntroPageTitle : @"Work-It-Out",
-                                    kNDIntroPageDescription : @"A great App to create your own personal workout and get instructed by your phone.",
-                                    kNDIntroPageImageName : @"workitout"
+                                    kNDIntroPageDescription : @"A great App to create your own personal workout and get instructed by your phone."
                                     },
                                   @{kNDIntroPageTitle : @"ColorSkill",
-                                    kNDIntroPageDescription : @"A small game while waiting for the bus. Easy, quick and addictive.",
-                                    kNDIntroPageImageName : @"colorskill"
+                                    kNDIntroPageDescription : @"A small game while waiting for the bus. Easy, quick and addictive."
                                     },
                                   @{kNDIntroPageTitle : @"Appreciate",
-                                    kNDIntroPageDescription : @"A little helper to make your life happier. Soon available on the AppStore",
-                                    kNDIntroPageImageName : @"appreciate"
+                                    kNDIntroPageDescription : @"A little helper to make your life happier. Soon available on the AppStore"
                                     },
                                   @{kNDIntroPageTitle : @"Do you like it?",
-                                    kNDIntroPageImageName : @"firstImage",
                                     kNDIntroPageTitleLabelHeightConstraintValue : @0,
                                     kNDIntroPageImageHorizontalConstraintValue : @-40
                                     }
